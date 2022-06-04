@@ -1,0 +1,221 @@
+<head>
+    <MU http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>MU - Configuration</title>
+    <style type="text/css">
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Sans-Serif;
+            line-height: 1.5em;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: small;
+            color: rgba(0,142,198,1);
+        }
+
+        .labelLong {
+            width: 400px;
+        }
+
+        #header {
+            background: #414040;
+            height: 60px;
+            color: white;
+            border-bottom: 6px;
+            border-bottom-color: #ff6600;
+            border-bottom-style: solid;
+        }
+
+            #header h1 {
+                margin: 0;
+                color: white;
+            }
+
+        main {
+            padding-bottom: 10010px;
+            margin-bottom: -10000px;
+            float: left;
+            width: 100%;
+        }
+
+        #nav {
+            padding-bottom: 10010px;
+            margin-bottom: -10000px;
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background: #eee;
+        }
+
+        .tdTitle {
+            text-align: left;
+            vertical-align: top;
+            height: 60px;
+        }
+
+        .labelTitle {
+            font-weight: bold;
+            font-size: small;
+            color: orangered;
+        }
+
+        .texbox {
+            display: inline-block;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            padding: 6px 30px 6px 30px;
+            border: 1px solid #b7b7b7;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            font: normal 12px/normal Verdana, Geneva, sans-serif;
+            color: rgba(0,142,198,1);
+            -o-text-overflow: clip;
+            text-overflow: clip;
+            background: rgba(252,252,252,1);
+            text-shadow: 1px 1px 0 rgba(255,255,255,0.66);
+            -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        }
+
+        .tdSignal {
+            width: 50px;
+            border-color: #003366;
+            border-width: 1px;
+            border-style: solid;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .submit {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 6;
+            -moz-border-radius: 6;
+            border-radius: 6px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 13px;
+            padding: 6px 25px 6px 25px;
+            text-decoration: none;
+        }
+
+            .submit:hover {
+                background: orangered;
+                text-decoration: none;
+            }
+
+        #footer {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            background-color: #232222;
+            color: white;
+            height: 200px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-bottom: 0px;
+            border-top: 6px;
+            border-top-color: #ff6600;
+            border-top-style: solid;
+        }
+
+        #wrapper {
+            overflow: hidden;
+        }
+
+        #content {
+            margin: 0px;
+        }
+
+        .innertube {
+            margin: 15px; /* Padding for content */
+            margin-top: 0;
+        }
+
+        p {
+            color: white;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            nav ul a {
+                color: darkgreen;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="innertube">
+            <img src="file://MU/c$/Users/Public/MU/MU_LOGO.PNG" width="75" height="75" title="MU LOGO" alt="MU">
+            <h1>MU - Configuration</h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <main>
+            <div id="content">
+                <div class="innertube">
+                    <form method="post">
+                        <p>
+                            <table>
+                                <tr>
+                                    <td width="500px" class="tdTitle"><label class="labelTitle" for="pays">Choix de la langue : </label></td>
+                                    <td>
+                                        <input type="radio" id="langChoice1"
+                                               name='langChoice' value='en-US'>
+                                        <label for="langChoice1">Anglais</label>
+                                        <input type="radio" id="langChoice2"
+                                               name='langChoice' value='fr-FR'>
+                                        <label for="langChoice2">Francais</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tdTitle"><label class="labelTitle" for="ssid">Selectionner un reseau WiFi dans la liste : </label></td>
+                                    <td>#TABLE-GENERATOR#</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdTitle"><label class="labelTitle" for="pass">Mot de passe du reseau WIFI (si necessaire) :</label></td>
+                                    <td><input class="texbox" type="password" name="pass" id="pass" value="#PASSWORD_VALUE#" /></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="submit" class="submit" value="Sauvegarder la configuration" /></td>
+                                </tr>
+                            </table>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="innertube">
+            <p>Reikan - 2017</p>
+        </div>
+    </footer>
+</body>

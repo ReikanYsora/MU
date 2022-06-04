@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar xml:lang="fr-FR" root="MuHome" tag-format="semantics/1.0" version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="MuHome">
+    <one-of>
+      <item>
+        Mu
+        <ruleref uri="#action"/>
+      </item>
+    </one-of>   
+  </rule>
+  <rule id="action">
+    <one-of>
+      <item>
+        affiche
+        <ruleref uri="#display"/>
+        <tag>out.action="display";</tag>
+      </item>
+      <item>
+        cache
+        <ruleref uri="#display"/>
+        <tag>out.action="hide";</tag>
+      </item>
+    </one-of>
+  </rule>
+  <rule id="display">
+    <one-of>
+      <item>
+        <ruleref uri="#mainPanel"/>
+        <tag>out.action=rules.latest();</tag>
+      </item>
+      <item>
+        <ruleref uri="#secondPanel"/>
+        <tag>out.action=rules.latest();</tag>
+      </item>
+      <item>
+        <ruleref uri="#notification"/>
+        <tag>out.action=rules.latest();</tag>
+      </item>
+    </one-of>
+  </rule>
+  <rule id="mainPanel">
+    <one-of>
+      <item>
+        le panneau systeme
+      </item>
+      <item>
+        les informations systèmes
+      </item>
+      <item>
+        les données actuelles
+      </item>
+    </one-of>
+  </rule>
+  <rule id="secondPanel">
+    <one-of>
+      <item>
+        le module de connexion wifi
+      </item>
+    </one-of>
+  </rule>
+  <rule id="notification">
+    <one-of>
+      <item>
+        les notifications
+      </item>
+    </one-of>
+  </rule>
+</grammar>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar xml:lang="en-US" root="mainWords" tag-format="semantics/1.0" version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="mainWords">
+    <one-of>
+      <item>
+        hello
+      </item>
+      <item>
+        good morning
+      </item>
+      <item>
+        hey
+      </item>
+    </one-of>
+  </rule>
+</grammar>
